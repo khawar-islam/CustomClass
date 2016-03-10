@@ -14,23 +14,26 @@ public class ProductDatasource {
         ArrayList<Product> list = new ArrayList<Product>();
 
         try {
-            for (int i = 0; 1 <= 10; i++)
-            {
-                Product mproduct = new Product();
-                mproduct.setProduct_id("ID" + (i + 2));
-                mproduct.setProduct_name("Product" + i);
-                mproduct.setProduct_description("Product Description" + (i + 2));
-                mproduct.setProduct_price("Price" + (i + 2));
-                mproduct.setProduct_image("ic_lion.png");
-
-                list.add(mproduct);
+            for (int i = 0; i <= 10; i++) {
+                Product item = new Product();
+                item.setProduct_id(i + "");
+                item.setProduct_name("Product No:" + (i + 1));
+                item.setProduct_price(i * 10 + " PKR");
+                item.setProduct_description("Description of product " + i);
+                item.setProduct_image("ic_stub.png");
+                list.add(item);
             }
+
 
 
         } catch (Exception e)
         {
         }
         return  list;
+
+    }
+    public long insert(Product product) {
+        return 0;
 
     }
 }
