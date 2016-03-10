@@ -21,7 +21,7 @@ public class MainActivity extends Activity {
     }
    public  void Onclick_ListView(View view)
    {
-       Intent intent=new Intent(this,ListViewActivity.class);
+       Intent intent=new Intent(this,ProductListActivity.class);
        startActivity(intent);
    }
 
