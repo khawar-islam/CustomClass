@@ -1,51 +1,51 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:context="com.khawarislam.customclass.MainActivity">
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#665544"
+    android:orientation="horizontal"
+    android:padding="2dp">
 
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/black"
+        android:padding="2dp">
+
+        <!--image-->
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_lion" />
+        <!--title-->
+
+    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="#4433ff"
         android:orientation="vertical"
-        android:layout_weight="7">
+        android:padding="10dp">
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:scaleType="fitXY"
-            android:src="@drawable/ic_lion"
-            android:adjustViewBounds="true"
-            android:id="@+id/row_produclist" />
-    </LinearLayout>
-
-        <LinearLayout
+        <!--text fields-->
+        <TextView
+            android:id="@+id/row_product_name"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:padding="5dp">
+            android:layout_height="wrap_content"
+            android:text="Name here"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:text="Product Name"
-                android:id="@+id/row_productname"
-                android:singleLine="true" />
+        <TextView
+            android:id="@+id/row_product_price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Price"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="fill_parent"
-                android:text="120 PKR"
-                android:layout_margin="5dp"
-                android:id="@+id/row_productprice"
-                android:singleLine="true" />
-        </LinearLayout>
-
-
-
+    </LinearLayout>
 
 </LinearLayout>
