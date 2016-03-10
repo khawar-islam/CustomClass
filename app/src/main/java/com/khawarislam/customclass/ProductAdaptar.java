@@ -29,6 +29,7 @@ public class ProductAdaptar extends ArrayAdapter<Product> {
         Product item=getItem(position);
         LayoutInflater inflater=(LayoutInflater) context.getSystemService(context.LAYOUT_INFLATER_SERVICE);
         View rowView=inflater.inflate(R.layout.row_product_list,parent,false);
+
         TextView tvProductname=(TextView) rowView.findViewById(R.id.row_product_name);
         TextView tvProductPrice=(TextView) rowView.findViewById(R.id.row_product_price);
 
